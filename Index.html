@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="assets\logo.png" class="logo">
+                <ul>
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Hi,I'm <span>Sreelakshmi</span></h1>
+                <p>Student at Amrita Vishwa Vidyapeetham</p>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets\RES.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 id="sub-title"style="font-size: 26px;font-weight: 800;"">About Me</h1>
+                    <p>Motivated and detail-oriented
+                         Computer Science student at Amrita 
+                         Vishwa Vidyapeetham with a strong foundation 
+                         in Python, Java, HTML, CSS,
+                         and JavaScript. Passionate about 
+                         problem-solving, software development,
+                          and learning new technologies. Efficient in teamwork,
+                           dedicated to responsibilities, and eager to gain hands-on
+                            experience in the tech industry.</p><br>
+                <div class="tab-titles">
+                    <button class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</button>
+                    <button class="tab-links" onclick="opentab(event, 'experience')">Experience</button>
+                    <button class="tab-links" onclick="opentab(event, 'education')">Education</button>
+                </div>           
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li>Project Management</li>
+                        <li>Public Relations</li>
+                        <li>Teamwork</li>
+                        <li>Time Management</li>
+                        <li>Leadership</li>
+                        <li>Effective Communication</li>
+                        <li>Critical Thinking</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li>Academic & Personal Projects
+                            <ul>
+                                <li>Portfolio Website</li>
+                            </ul>
+                        </li>
+                        <li>Experience & Internship 
+                            <ul>
+                                <li>Devoleped responsive webpages using HTML, CSS, javascript.</li>
+                            </ul>
+                        </li>
+                        <li>Technical Volunteer, College Events
+                            <ul>
+                                <li>Assisted in setting up and managing tech-related tasks during college events</li>
+                                <li>Worked in a team to provide troubleshooting support for event participants. </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>10th<br>Presentation Higher Secondary School</li>
+                            <li>12th<br>Providence G H S S</li>
+                            <li>B.TECH DEGREE<br>Amrita Vishwa Vidyapeetham</li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+                </div>    
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>      
+</div>
+
+
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+       <div class="service-card">
+        <img src="assets\front.jpg" alt="frontend dev">
+        <h2>Front-End Devolepment</h2>
+        <p>Crafting responsive and visually appealing websites using HTML, CSS, and JavaScript.</p>
+       </div>
+       <div class="service-card">
+        <img src="assets\art.jpg" alt="art">
+        <h2>Creative & Artistic Services</h2>
+        <p>Custom portrait sketches and digital art (upon request), tapping into my passion for drawing.</p>
+       </div>
+       <div class="service-card">
+        <img src="assets\group.png" alt="event">
+        <h2>Event Tech Support</h2>.
+        <p>Providing technical assistance for events including audio-visual setup and troubleshooting</p>
+       </div>
+        </div>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p class="social-icons"><img src="https://cdn-icons-png.freepik.com/256/12320/12320437.png?ga=GA1.1.823893891.1743786628&semt=ais_hybrid" alt="">sreelakshmi2659@gmail.com</p>
+                <p class="social-icons"><img src="https://cdn-icons-png.freepik.com/256/16076/16076069.png?ga=GA1.1.823893891.1743786628&semt=ais_hybrid" alt="ph">9447532659</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/sreelakshmi_s59/" target="_blank"><img src="https://cdn-icons-png.freepik.com/256/2111/2111463.png?ga=GA1.1.823893891.1743786628&semt=ais_hybrid" alt="ig"></a>
+                    <a href="https://shorturl.at/9NBJo"><img src="https://cdn-icons-png.freepik.com/256/2504/2504923.png?ga=GA1.1.823893891.1743786628&semt=ais_hybrid" alt="ld"></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" id="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(event,tabname){
+        for(var tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(var tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>    
+</body>
+</html>
