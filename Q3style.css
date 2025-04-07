@@ -1,0 +1,18 @@
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th,td{
+    padding: 10px;
+    text-align: center;
+}
+th{
+    background-color: #333;
+    color:#ffffff
+}
+tr:nth-child(even){
+    background-color: #d0e1f9;
+}
+tr:nth-child(odd){
+    background-color: (#c8f7c5);
+}

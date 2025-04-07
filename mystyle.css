@@ -1,0 +1,11 @@
+body {
+    background-image: url('https://img.freepik.com/free-photo/christmas-background-purple-glitter_1048-3425.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(8, 2, 9);
+}
