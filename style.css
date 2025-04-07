@@ -159,7 +159,7 @@ nav ul li a:hover::after{
 
 }
 .service-card h2{
-    font size:20px;
+    font-size:20px;
     margin:15px 0;
 }
 .service-card p{
@@ -233,3 +233,88 @@ form input, form textarea{
     color: #262626;
     font-weight: bold;
 }
+/*--------PORTFOLIO----------*/
+#portfolio{
+    padding: 50px 0;
+}
+.image-container{
+    position: relative;
+    width: 300px;
+    
+}
+.image-container img{
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(240, 237, 237);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+.image-container:hover .overlay{
+    opacity: 1;
+}
+.text{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.work-list{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.image-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+/*---Responsive---*/
+@media (max-width: 768px) {
+    .container {
+      padding: 10px 20px;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .header-text h1 {
+      font-size: 30px;
+      text-align: center;
+    }
+  
+    .service-card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .image-container {
+      width: 100%;
+    }
+  
+    #btn {
+      width: 100%;
+    }
+  }
+  
